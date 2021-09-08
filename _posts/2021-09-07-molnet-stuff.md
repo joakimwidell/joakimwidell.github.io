@@ -192,3 +192,7 @@ men på senare år så har en fjärde kategori dykt upp, då pratar vi om **FaaS
 
 ![googlevscloud](https://user-images.githubusercontent.com/70150296/132320588-5e264356-af4a-4066-b9d1-d1fad3e1ef7d.png){: .mx-auto.d-block :}
 
+
+## Referenser
+
+       **https://www.cloudflare.com/learning/cloud/what-is-the-cloud/** **https://www.salesforce.com/products/platform/best-practices/benefits-of-cloud-computing/** **https://www.nibusinessinfo.co.uk/content/disadvantages-cloud-computing**
