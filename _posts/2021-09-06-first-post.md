@@ -6,6 +6,7 @@ gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
 tags: [first]
 comments: true
+readtime: true
 ---
 
 

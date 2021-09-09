@@ -6,6 +6,7 @@ gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
 tags: [CI-Pipelines, GitHub-Actions]
 comments: true
+readtime: true
 ---
 
 ### Vad är en CI pipeline?

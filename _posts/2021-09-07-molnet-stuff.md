@@ -6,6 +6,7 @@ gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
 tags: [The-Cloud]
 comments: true
+readtime: true
 ---
 
 ## Inlämningsuppgift 1
