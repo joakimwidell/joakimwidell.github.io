@@ -20,3 +20,5 @@ Efter många om och men så lyckades jag skapa en koppling mellan Git pages och 
 **Här är en bild på en get, bara för att lyfta stämningen lite**
 
 ![Goat](https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg){: .mx-auto.d-block :}
+
+😺 🛹 🦑
