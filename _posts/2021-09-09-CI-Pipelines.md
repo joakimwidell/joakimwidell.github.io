@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Inlägg 07-09-2021
+title: Inlägg 09-09-2021
 subtitle: CI Pipelines
 gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
-tags: [The-Cloud]
+tags: [CI-Pipelines, GitHub-Actions]
 comments: true
 ---
 
@@ -97,10 +97,10 @@ Det finns ett par kriterier som man tittar efter i en *bra* pipeline. Det är en
     automation är att om något går fel, har vi inte nödvändigtvis samma kontroll över processen. Och lösningen kan därav bli lite mer
     komplex än om en utvecklare hade suttit manuellt med uppgiften.
 
-    Därför använder man sig ofta av CI/CD verktyg som kan modellera både simpla och komplexa arbetsflöden. Den stora fördelen av just autmation
-    är samma som i alla andra områden av livet, manuella misstag blir nästan omöjliga. 
+Därför använder man sig ofta av CI/CD verktyg som kan modellera både simpla och komplexa arbetsflöden. Den stora fördelen av just autmation
+är samma som i alla andra områden av livet, manuella misstag blir nästan omöjliga. 
 
---------------------------------------------------------
+---
 
 
 ### Vår pipeline
@@ -117,7 +117,7 @@ genom att referera direkt till den path vi behövde komma åt i våra run statem
 
 Inkluderat undertil är ett screenshot av vår yml fil, där pipelinen har byggts upp.
 
-![pipelines](_posts\Images\CI-pipeline.png)
+![pipelines](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/CI-pipeline.png?raw=true)
 
 Kortfattat så enablar vi pipelinen varje gång man pushar till GitHub, vi kör den på senaste versionen av Ubuntu, detta hade likväl kunnat 
 vara windows, men vi körde på detta. Vi använder [Checkout](https://github.com/actions/checkout) och [setup-dotnet](https://github.com/actions/setup-dotnet)
@@ -128,7 +128,7 @@ att behöva köra det under nästa steg, som är dotnet build. Vi kör build fö
 
 Det tog ett tag att få till rätt syntax, men vi fick det tillslut att gå igenom och visa en hjärvärmande grön checkmark. 
 
-![Success](_posts\Images\Success.png)
+![Success](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/Success.png?raw=true)
 
 
 ### Referenser
