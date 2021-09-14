@@ -4,12 +4,12 @@ title: Inlägg 14-09-2021
 subtitle: Containers
 gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
-tags: [CI-Pipelines, GitHub-Actions]
+tags: [Docker, CI-Pipelines, GitHub-Actions, GitHub-Publish]
 comments: true
 readtime: true
 ---
 
-### Containrar och orkestrering
+# Containrar och orkestrering
 
 <p1>
 Jag har arbetat med containrar tidigare, men i detta avsnitt  lärde jag mig lite nya sätt
