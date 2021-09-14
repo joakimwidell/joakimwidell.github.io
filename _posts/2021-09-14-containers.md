@@ -24,42 +24,47 @@ tänker jag stegvis gå igenom dem.
 Nedan finner ni de verktyg som jag har installerat lokalt på min dator för att 
 möjliggöra/förenkla processerna:
 
-    - VSCode:
-        Jag valde att använda VSCode för detta då vanliga Visual studio har en tendens
-        att inkludera mycket som inte riktigt behövs för uppgiften. Detta hade självklart
-        inte påverkat min container, men jag föredrar lättvikten.
+VSCode:
+
+Jag valde att använda VSCode för detta då vanliga Visual studio har en tendens
+att inkludera mycket som inte riktigt behövs för uppgiften. Detta hade självklart
+inte påverkat min container, men jag föredrar lättvikten.
         
-        - Extensions till VSCode:
-            Jag har använt mig av ett par olika extensions till denna uppgiften, vissa är
-            nödvändiga som [Omnisharp C# for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode)
-            medans andra är enbart för bekvämlighetens skull. Där räknas [Docker for Visual Studio Code](https://github.com/microsoft/vscode-docker)
-            definitivt in. En kort beskrivning av vad Docker-extensionen gör är att den bidrar med mallar för
-            olika containrar i form av Dockerfiles och docker-compose.yml. I detta fallet använde jag en ASP .NET Core 
-            mall, och fick med de nödvändiga raderna för en grundläggande container.
+Extensions till VSCode:
 
-            Här kan man se hur filerna ser ut direkt vid import:
+Jag har använt mig av ett par olika extensions till denna uppgiften, vissa är
+nödvändiga som [Omnisharp C# for Visual Studio Code](https://github.com/OmniSharp/omnisharp-vscode)
+medans andra är enbart för bekvämlighetens skull. Där räknas [Docker for Visual Studio Code](https://github.com/microsoft/vscode-docker)
+definitivt in. En kort beskrivning av vad Docker-extensionen gör är att den bidrar med mallar för
+olika containrar i form av Dockerfiles och docker-compose.yml. I detta fallet använde jag en ASP .NET Core 
+mall, och fick med de nödvändiga raderna för en grundläggande container.
 
-            ![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/dockerfile-template.png?raw=true)
-            ----
-            ![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/docker-compose-template.png?raw=true)
+Här kan man se hur filerna ser ut direkt vid import:
 
-            **Jag kommer senare i inlägget gå igenom hur dessa Dockerfiles fungerar** 
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/dockerfile-template.png?raw=true)
+----
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/docker-compose-template.png?raw=true)
+
+**Jag kommer senare i inlägget gå igenom hur dessa Dockerfiles fungerar** 
 
 
-    - Docker Desktop/WSL 2:
-        Precis som VSCode är detta något som jag har arbetat med tidigare, Docker desktop
-        ansvarar för att köra och bygga våra containers. Det körs på WSL vilket är en komplett
-        Linux kernel som kan användas på Windows, [här](https://docs.docker.com/desktop/windows/wsl/) 
-        kan man hitta instruktioner för att installera det.
+Docker Desktop/WSL 2:
 
-    - Windows Terminal:
-        Jag använder mig av Windows Terminal av den enkla anledningen att allt finns på samma ställe.
-        Här kör vi i Powershell våra docker commands, som *compose-up*, *images*, *rmi* osv..
+    Precis som VSCode är detta något som jag har arbetat med tidigare, Docker desktop
+    ansvarar för att köra och bygga våra containers. Det körs på WSL vilket är en komplett
+    Linux kernel som kan användas på Windows, [här](https://docs.docker.com/desktop/windows/wsl/) 
+    kan man hitta instruktioner för att installera det.
 
-    - GitHub Desktop:
-        Jag har märkt att GitHub Desktop är något som jag använder mindre och mindre ju längre in i studierna
-        jag kommer. Det är fortfarande ett väldigt bra verktyg för att kunna klona ner repositories och för
-        att säkerställa vad som pushas upp. 
+Windows Terminal:
+
+    Jag använder mig av Windows Terminal av den enkla anledningen att allt finns på samma ställe.
+    Här kör vi i Powershell våra docker commands, som *compose-up*, *images*, *rmi* osv..
+
+GitHub Desktop:
+
+    Jag har märkt att GitHub Desktop är något som jag använder mindre och mindre ju längre in i studierna
+    jag kommer. Det är fortfarande ett väldigt bra verktyg för att kunna klona ner repositories och för
+    att säkerställa vad som pushas upp. 
 
 Utöver dessa program, som egentligen redan fanns på min dator har jag inte behövt installera något nytt för
 denna veckans uppgift. 
