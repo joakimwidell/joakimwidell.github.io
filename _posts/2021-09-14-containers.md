@@ -50,21 +50,21 @@ Här kan man se hur filerna ser ut direkt vid import:
 
 Docker Desktop/WSL 2:
 
-    Precis som VSCode är detta något som jag har arbetat med tidigare, Docker desktop
-    ansvarar för att köra och bygga våra containers. Det körs på WSL vilket är en komplett
-    Linux kernel som kan användas på Windows, [här](https://docs.docker.com/desktop/windows/wsl/) 
-    kan man hitta instruktioner för att installera det.
+>Precis som VSCode är detta något som jag har arbetat med tidigare, Docker desktop
+>ansvarar för att köra och bygga våra containers. Det körs på WSL vilket är en komplett
+>Linux kernel som kan användas på Windows, [här](https://docs.docker.com/desktop/windows/wsl/) 
+>kan man hitta instruktioner för att installera det.
 
 Windows Terminal:
 
-    Jag använder mig av Windows Terminal av den enkla anledningen att allt finns på samma ställe.
-    Här kör vi i Powershell våra docker commands, som *compose-up*, *images*, *rmi* osv..
+>Jag använder mig av Windows Terminal av den enkla anledningen att allt finns på samma ställe.
+>Här kör vi i Powershell våra docker commands, som *compose-up*, *images*, *rmi* osv..
 
 GitHub Desktop:
 
-    Jag har märkt att GitHub Desktop är något som jag använder mindre och mindre ju längre in i studierna
-    jag kommer. Det är fortfarande ett väldigt bra verktyg för att kunna klona ner repositories och för
-    att säkerställa vad som pushas upp. 
+>Jag har märkt att GitHub Desktop är något som jag använder mindre och mindre ju längre in i studierna
+>jag kommer. Det är fortfarande ett väldigt bra verktyg för att kunna klona ner repositories och för
+>att säkerställa vad som pushas upp. 
 
 Utöver dessa program, som egentligen redan fanns på min dator har jag inte behövt installera något nytt för
 denna veckans uppgift. 
@@ -122,10 +122,10 @@ därav bristen på unikt namn 😅). Image delen av denna filen är antagligen i
 
 Man kan säga att compose är en trestegs-process:
 
-    1. Definera miljön för din applikation med en **Dockerfile** så att den kan reproduceras självständigt
-    2. Definera tjänsterna som bygger upp din app i en **docker-compose.yml** fil så att de kan köras
-       tillsammans i en isolerad miljö.
-    3. Kör **docker compose up** för att starta och köra hela applikationen.
+>1. Definera miljön för din applikation med en **Dockerfile** så att den kan reproduceras självständigt
+>2. Definera tjänsterna som bygger upp din app i en **docker-compose.yml** fil så att de kan köras
+>   tillsammans i en isolerad miljö.
+>3. Kör **docker compose up** för att starta och köra hela applikationen.
 
 ------
 
