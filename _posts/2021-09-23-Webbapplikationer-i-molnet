@@ -1,0 +1,28 @@
+---
+layout: post
+title: Inlägg 23-09-2021
+subtitle: Webbapplikationer i molnet
+gh-repo: joakimwidell
+gh-badge: [star, fork, follow]
+tags: [The Cloud, Web Application]
+comments: true
+readtime: true
+---
+
+# Webbapplikatoner i molnet
+
+----
+
+# Vår applikation
+
+Vi har skapat en applikation som tar in en användares namn och lagrar denne
+med ett unikt ID i en CosmosDB databas. Applikationen ligger uppe på
+Azure och kan nås från vartsomhelst (sitter i nederländerna nu och det funkar kanonbra).
+
+# Kodstruktur
+
+Då vi tidigare har gått igenom hur man börjar med CosmosDB kommer jag bara plocka upp
+där vi slutade senast, vi använde oss tillochmed av samma databas för denna uppgift.
+
+
+
