@@ -1,0 +1,32 @@
+NETWORK SECURITY GROUPS:
+
+- A set of acces controller routes wrapped around a VM or subnet
+- Inspects incoming traffic to approve or deny packets
+- Things to look at: RULE NAME, SOURCE IP, SOURCE PORT, DESTINATION IP, DESTINATION PORT, DIRECTION (inbound, outbound), ACTION (Allowed or denied), PRIORITY(Lower = higher prio)
+- Isolating traffic between subnets
+- Control traffic from the internet
+- 
+
+PRIVATE LINK:
+
+- Virtual network via expressroute, consists of a VM on a subnet. Backend stored on blob storage.
+- 1. Private IP of VM gets translated to a public IP for the blob storage. 
+- 2. Can pick specific networks available to connect
+- 3. Private endpoint, needs a private link resource. Does not need a public endpoint.
+- 
+
+VIRTUAL NETWORKS:
+
+- Expressroute allows you to extend your local networks to the Microsoft cloud over a private connection.
+Expressroute does not go over the public internet [list of certifications](https://docs.microsoft.com/en-us/compliance/regulatory/offering-home?view=o365-worldwide). Annual budget of 1 billion$. Staff of about 3500 people. Only accepts public IP addresses, but can translate private ones using NAT (network adress translation). Bandwidth can be altered without terminating/rebuilding the connection. [List of express route locations](https://docs.microsoft.com/en-ca/azure/expressroute/expressroute-locations)
+- Add rules, for instance. Deny all except for the desired Azure Storage location.
+- All communication happens on the Microsoft backbone network. 
+
+VNET SVERICE ENDPOINTS:
+
+- any connection with storage on same region happens on mcr backbone network.
+- connections to public internet still would go through firewall
+- higher priority then default route
+- Enable for instance Microsoft.storage
+- Secure and fast.
+- limit transactional data, prevent data theft.
