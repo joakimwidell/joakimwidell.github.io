@@ -24,7 +24,7 @@ Först vill jag förklara hur en service bus fungerar:
 
 När man använder sig av service bus så skickas all data eller *messages* som det heter inom området till en *queue* eller ett *topic*. 
 
-Queue:
+Queue:  
 ![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/QueueBus.png)
 
 I en queue så skickas ett message till en tjänst/applikation, när det sedan har konsumerats av någon av mottagarna så tas det sedan bort ur queuen. 
@@ -51,7 +51,7 @@ En queue kan som sagt skicka ett message till en konsument, men om vi skulle vil
 
 Det är då **Topics** kommer in i bilden:
 
-Topic:
+Topic:  
 ![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/TopicBus.png)
 
 Ett topic fungerar på ett liknande sätt som en queue, den stora skillnaden är att ett topic har stöd för att skicka ut samma message till ett flertal mottagare. Detta ser lite annorlunda ut än en queue i praktiken, men resultatet är precis detsamma som i en queue. 
@@ -89,7 +89,7 @@ Med Azure Private Link så ser verkligheten lite annorlunda ut, och jag ska för
 
 Den första uppenbara fördelen är att vi får tillgång till resurser vi inte har för tillfället. Automatisk skalning, garantier när det gäller upptid och professionell support vid behov (utan att behöva anställa någon för samma syfte).
 
-Här är en graf som lite snabbt beskriver förloppet med en Azure Private Link:
+Här är en graf som lite snabbt beskriver förloppet med en Azure Private Link:  
 
 ![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/Azure-private-link.png)
 
@@ -123,13 +123,13 @@ För att sammanfatta allt jag precis gick igenom så finns det i dagsläget väl
 
 
 # References
-https://www.youtube.com/watch?v=HrK1UlPBkEY - Azure service bus
-https://www.youtube.com/watch?v=vVDql7IKneg - Azure private link
-https://www.youtube.com/watch?v=gxsitRRgylI - Azure virtual network
-https://www.youtube.com/watch?v=vgnSLuf_zj0 - Azure network security groups
-https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview - Vnet
-https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues - DLQ
-https://docs.microsoft.com/en-us/azure/service-bus-messaging/private-link-service - Private Link
+https://www.youtube.com/watch?v=HrK1UlPBkEY - Azure service bus  
+https://www.youtube.com/watch?v=vVDql7IKneg - Azure private link  
+https://www.youtube.com/watch?v=gxsitRRgylI - Azure virtual network  
+https://www.youtube.com/watch?v=vgnSLuf_zj0 - Azure network security groups  
+https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview - Vnet  
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues - DLQ  
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/private-link-service - Private Link  
 
 
 
