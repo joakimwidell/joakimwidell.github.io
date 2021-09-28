@@ -4,7 +4,7 @@ title: Inlägg 28-09-2021
 subtitle: Närverk i molnet
 gh-repo: joakimwidell
 gh-badge: [star, fork, follow]
-tags: [CI-Pipelines, GitHub-Actions]
+tags: [Azure-Service-Bus, Azure-Private-Link]
 comments: true
 readtime: true
 ---
