@@ -25,7 +25,7 @@ Först vill jag förklara hur en service bus fungerar:
 När man använder sig av service bus så skickas all data eller *messages* som det heter inom området till en *queue* eller ett *topic*. 
 
 Queue:
-![image](_posts\Images\QueueBus.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/QueueBus.png)
 
 I en queue så skickas ett message till en tjänst/applikation, när det sedan har konsumerats av någon av mottagarna så tas det sedan bort ur queuen. 
 
@@ -52,7 +52,7 @@ En queue kan som sagt skicka ett message till en konsument, men om vi skulle vil
 Det är då **Topics** kommer in i bilden:
 
 Topic:
-![image](_posts\Images\TopicBus.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/TopicBus.png)
 
 Ett topic fungerar på ett liknande sätt som en queue, den stora skillnaden är att ett topic har stöd för att skicka ut samma message till ett flertal mottagare. Detta ser lite annorlunda ut än en queue i praktiken, men resultatet är precis detsamma som i en queue. 
 
@@ -68,11 +68,11 @@ Med filter kan man även inlkudera actions, detta betyder att ett message som ha
 
 Från en systemutvecklares synpunkt så är fördelarna med Azure Service Bus väldigt påtagliga, men för att sätta de i klartext så har jag målat upp två grafer:
 
-![image](_posts\Images\API-requests.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/API-requests.png)
 
 Här ser du antalet requests vårt API tar emot under en given tidsperiod. DÅ det är ojämt så betyder det att vissa tider av dagen kräver mer processering än andra, detta leder till att kapaciteten måste anpassas till den högsta toppen för att klara av dessa requests, om man inte använder sig av Azure Service Bus. Nedan kan du se hur processeringen ser ut med APIet kopplat till en service bus.
 
-![image](_posts\Images\queue-processing.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/queue-processing.png)
 
 Eftersom alla messages placeras i en kö, och hanteras i samma takt oavsätt mängd så betyder det att vi kan lägga vår kapacitet på en median av det behov som uppstår. Med detta så slösar vi mindre kapacitet under de timmarna som den inte behövs, det tåls att säga att under *peak hours* så kommer hanteringen gå långsammare. Men kapaciteten möter behovet på ett helt annat sätt.
 
@@ -91,7 +91,7 @@ Den första uppenbara fördelen är att vi får tillgång till resurser vi inte 
 
 Här är en graf som lite snabbt beskriver förloppet med en Azure Private Link:
 
-![image](_posts\Images\Azure-private-link.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/Azure-private-link.png)
 
 För att bryta ner vad allt detta betyder kan vi börja med ExpressRoute.
 
