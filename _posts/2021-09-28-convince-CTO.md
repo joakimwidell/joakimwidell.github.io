@@ -72,7 +72,7 @@ Från en systemutvecklares synpunkt så är fördelarna med Azure Service Bus v�
 
 Här ser du antalet requests vårt API tar emot under en given tidsperiod. DÅ det är ojämt så betyder det att vissa tider av dagen kräver mer processering än andra, detta leder till att kapaciteten måste anpassas till den högsta toppen för att klara av dessa requests, om man inte använder sig av Azure Service Bus. Nedan kan du se hur processeringen ser ut med APIet kopplat till en service bus.
 
-![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/Azure-private-link.png?raw=true)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/queue-processing.png?raw=true)
 
 Eftersom alla messages placeras i en kö, och hanteras i samma takt oavsätt mängd så betyder det att vi kan lägga vår kapacitet på en median av det behov som uppstår. Med detta så slösar vi mindre kapacitet under de timmarna som den inte behövs, det tåls att säga att under *peak hours* så kommer hanteringen gå långsammare. Men kapaciteten möter behovet på ett helt annat sätt.
 
@@ -91,7 +91,7 @@ Den första uppenbara fördelen är att vi får tillgång till resurser vi inte 
 
 Här är en graf som lite snabbt beskriver förloppet med en Azure Private Link:  
 
-![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/212159c2035d3f0b167e7951c0e479ebf8cac8eb/_posts/Images/Azure-private-link.png)
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/Azure-private-link.png?raw=true)
 
 För att bryta ner vad allt detta betyder kan vi börja med ExpressRoute.
 
