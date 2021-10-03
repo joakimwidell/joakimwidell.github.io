@@ -15,11 +15,11 @@ Applikationen är uppbyggd i Visual Studio med hjälp av Razor pages, och den fu
 
 Händelseförloppet ser ut såhär:
 
-![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/flowchart-blobs.png)
+![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/dfaf2804bff125dd7dc1eef60d54d20c20fa3122/_posts/Images/flowchart-blobs.png)
 
 Användaren kan välja att ladda upp en fil, och sedan submitta den. Det finns även stöd för drag and drop.
 
-![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/blob-site.png)
+![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/dfaf2804bff125dd7dc1eef60d54d20c20fa3122/_posts/Images/blob-site.png)
 
 När användaren sedan har valt sin fil och tryckt på submit så skickas filen upp i Azure Blob storage.
 
@@ -29,7 +29,7 @@ Själva webbapplikationen har endast stöd för att ladda upp bilder i nuläget.
 
 Stommen för hur genererad input kan röra sig genom programmet syns i följande diagram:
 
-![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/dataflow-blobl.png)
+![Image](https://github.com/joakimwidell/joakimwidell.github.io/blob/dfaf2804bff125dd7dc1eef60d54d20c20fa3122/_posts/Images/dataflow-blobl.png)
 
 Beroende på vad användaren vill åstadkomma så tas ett input, antingen i form utav en fil eller ett request. Detta input hanteras sedan av applikationen och triggar en av följande metoder:
 
@@ -224,11 +224,11 @@ Azure ger användare möjligheten att använda *secret keys* som antingen är ge
 Därför är det väldigt viktigt att man som utvecklare inte bara antar att säkerheten kommer inbyggd, utan även kontrollerar alla möjliga säkerhetsrisker.
 
 ## Referenser
-
-Azure blob storage - https://medium.com/@rammonzito/azure-blob-storage-using-a-net-core-console-application-106a0c2e6de5
-Azure storage CRUD operations - https://www.c-sharpcorner.com/article/azure-storage-crud-operations-in-mvc-using-c-sharp-part-two/
-Azure storage blobs - https://docs.microsoft.com/en-us/dotnet/api/azure.storage.blobs?view=azure-dotnet
-
+  
+Azure blob storage - https://medium.com/@rammonzito/azure-blob-storage-using-a-net-core-console-application-106a0c2e6de5  
+Azure storage CRUD operations - https://www.c-sharpcorner.com/article/azure-storage-crud-operations-in-mvc-using-c-sharp-part-two/  
+Azure storage blobs - https://docs.microsoft.com/en-us/dotnet/api/azure.storage.blobs?view=azure-dotnet  
+ 
 
 
 
