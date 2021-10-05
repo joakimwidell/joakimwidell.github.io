@@ -151,3 +151,38 @@ I denna metoden ligger det inte riktigt något nytt jämtemot den tidigare metod
 
 Nedan kan ni se ett diagram på hur applikationen fungerar samt vilket syfte loggingen kan ha:
 
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/logger-diagrams.png?raw=true)
+
+Precis som vi diskuterade i det tidigare kapitlet så pratar användaren med applikationen via Razor Pages, som sedan pratar med databasen.
+
+Det man kan se här i diagrammet är hur applikationen ansvarar för att skicka ut loggar till app insights, som i sin tur gör det möjligt för en monitor att läsa igenom loggarna och ta åtgärder om det är några direkta fel som har uppstått eller använda sig av loggarna för att få en överblick i hur hela systemet fungerar och sedan kunna föreslå ändringar för att förbättra det.
+
+## KQL querys
+
+
+Först har vi ett query som plockar ut alla loggar med en severity level högre än 1, dvs **Warning** eller högre. 
+  
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/severity-kusto-request.png?raw=true)
+  
+    
+Att kunna filtrera ut relevant information är ett måste överallt i världen idag, och detta tillåter oss att fokusera på den nivå vi bestämmer själva. Man kanske har ett team som enbart kollar på **Fatal** medans man har ett annat team som kollar på **Warning** osv.
+  
+  
+Sedan har vi ett query som enbart plockar ut loggar från specifika datum.
+
+![image](https://github.com/joakimwidell/joakimwidell.github.io/blob/main/_posts/Images/timestamp-kusto-request.png?raw=true)
+
+Du kanske har vart borta från kontoret ett par dagar och behöver ett snabbt sätt att beräkna din backlog. Då är det vettigt att kunna parsa ut de dagar du behöver ta igen innan du hoppar på senare loggar.
+
+KQL queries gör det möjligt för oss att behandla loggar som all annan sorts data i databaser, vi kan parsa ut och fokusera på det som enbart är relevant för oss.
+
+----
+
+## Referenser:
+
+[Logging levels](https://docs.datalust.co/v4/docs/logging-levels)  
+[Application insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core)  
+[Serilog best practices](https://benfoster.io/blog/serilog-best-practices/)
+[Kusto Queries](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/tutorial?pivots=azuremonitor)  
+[Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-5.0)
+
